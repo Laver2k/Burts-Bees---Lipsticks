@@ -1,0 +1,1739 @@
+@import "bourbon";
+@import "variables";
+
+@import "normalize.scss";
+@import "boilerplate.scss";
+
+@import "layout.scss";
+@import "fonts.scss";
+
+/******************** Home page ********************/
+ 
+div#section-hero { 
+	display:inline-block;
+}
+
+div#section-hero div.block{
+	width:100%;
+	@include phablet {
+	width:50%;
+	float:left;
+	}
+}
+
+div#section-hero .content { 
+	display:inline-block; 
+	@include desktop {
+	max-height:rem(650);
+	}
+}
+ 
+div#section-moisture {
+	@include desktop {
+	overflow:hidden;
+	}
+}
+
+img#loves-you-back {
+	margin-top:rem(30);
+	margin-bottom:rem(30);
+	width:100%;
+	@include phablet {
+	margin-bottom:rem(0);
+	width:auto;
+	}
+	@include desktop {
+	margin-top:rem(35);
+	}
+}
+
+
+img#pouting-lady {
+	margin-top:35%;
+	@include desktop {
+	margin-top:rem(70); 
+	}
+}
+
+img#hero-lipsticks {
+	
+	width:100%;
+	@include desktop {
+	margin-top:rem(30);
+	}
+
+}
+
+
+img#hundred-percent-natural {
+	margin-top:rem(35);
+	@include desktop {
+	margin-top:rem(28);
+	}
+}
+
+
+button#discover-more {
+	@include desktop {
+	margin-bottom:rem(30);
+	}
+}
+
+
+img#win-lipsticks {
+	margin-top:rem(30);
+	@include desktop {
+	margin-top:rem(45);
+	}
+}
+
+p#win-lipsticks-summary {
+	margin-bottom:rem(0);
+	@include desktop {
+	margin-top:rem(22);
+	margin-bottom:rem(50);
+	}
+
+}
+
+p#moisture-summary {
+  margin-top:rem(20);
+  margin-bottom:rem(20);
+  @include desktop {
+  margin-top:rem(20);
+  margin-bottom:rem(20);
+  }
+}
+
+span#lipstick-countdown {
+	width:100%;
+	display:inline-block; 
+	margin-top:rem(18);
+	margin-bottom:rem(7);
+ 	@include desktop {
+	margin-top:rem(40);
+	margin-bottom:rem(10);
+	}
+}
+
+button#get-yours {
+	margin-bottom:rem(40);
+ 	@include desktop {
+	margin-bottom:rem(50); 
+	}	
+}
+
+div#shade-finder {
+	    display: inline-block;
+}
+
+
+div#section-win .content {
+	display:inline-block;
+}
+
+img#lip-shade-finder {
+	max-width:280px;
+	padding-top:rem(65);
+	padding-bottom:rem(55);
+
+ 	@include min-em(760) {
+	padding-top:rem(75);
+	padding-bottom:rem(40);
+	max-width:330px;
+ 	}	
+
+}
+
+
+div#hero-part-2 {
+	text-align: right;
+	display:none;
+	@include phablet {
+	display:inline-block;
+	}
+	
+	img {
+		width:80%;
+		padding: 0 10%;
+		@include desktop {
+		width:87%;
+		padding: 0%;
+		}
+	}
+}
+
+
+img#mobile-pouting-lady {
+	width:100%;
+	@include phablet {
+	display:none;
+	}
+}
+
+
+img#lipstick-three-rows {
+	padding-top:rem(50);
+}
+
+
+img#location-map {
+	max-width:rem(280);
+	padding-bottom:rem(10);
+	padding-top:rem(40);
+	@include phablet {
+	max-width:inherit;
+	width:rem(300);
+	padding-bottom:rem(5);
+	padding-top:rem(40);
+	}
+}
+
+
+button#find-us-near-you {
+	margin-top:rem(15);
+	margin-bottom:rem(35);
+	width:auto;
+	padding:0 rem(20);
+	@include phablet {
+	margin-bottom:rem(45);
+	}
+}
+
+
+div#form-8hour {
+	width:100%;
+    margin: rem(20) auto rem(20) auto;
+	background-color:#fff;
+	border: 5px solid $light-pink;
+	box-sizing: border-box;
+	float:left;
+	display:none;
+    position:relative;
+    @include desktop {
+    margin: 0 auto 0 auto;
+    }
+}
+
+
+
+div#left-8hour {
+	width:100%;
+	text-align:center;
+	box-sizing: border-box;
+	padding:rem(5) rem(20) rem(0) rem(20);
+	@include min-em(590) {
+	width:50%;
+	float:left;
+	max-width:rem(600);
+	}
+}
+
+div#right-8hour {
+	width:100%;
+    text-align: center;
+	@include min-em(590) {
+	width:50%;
+	float:left;
+	} 
+}
+
+div#form-wrapper {
+	width:100%;
+	margin:0 auto;
+	display:inline-block;
+
+	@include min-em(920) {
+	width:70%;
+	margin:0 auto;
+	display:inline-block;
+	}
+
+}
+
+img#close-form {
+cursor:pointer;
+position:absolute;
+top:rem(20);
+right:rem(20); 
+}
+
+div#form-8hour div#form-container {
+	width:90%;
+	@include min-em(1050) {
+	width:350px;
+	}
+	margin:0 auto;
+}
+
+
+div#form-8hour label {
+	text-align:center;
+    display: inline-block;
+}
+
+
+div#form-8hour input {
+	background-color:#ededed;
+	box-sizing: border-box;
+	border:none;
+	padding:rem(10) rem(10);
+	text-align:center;
+	width:100%;
+	margin-bottom:rem(20);
+	@include min-em(590) {
+	margin-bottom:rem(13);
+	}
+}
+
+div#form-8hour input[type='checkbox'] {
+    width: auto;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-right: 6px;
+}
+
+div#form-8hour label[for='newsletter'] {
+    display: block;
+}
+
+
+div#form-8hour span {
+	display:inline-block;
+	width:100%;
+	margin-bottom:rem(12);
+}
+
+
+img#form-bubbles {
+	text-align:left;
+}
+
+
+img#form-8hr-title {
+	margin-bottom:rem(20);
+	@include min-em(590) {
+	margin-bottom:rem(30);
+	}
+}
+
+
+div#form-8hour button#giveaway-submit {
+	margin-top:rem(0);
+	margin-bottom:rem(5);
+	@include min-em(590) {
+	margin-top:rem(0);
+	margin-bottom:rem(15);
+	}
+}
+
+p#terms-link {
+	margin-bottom:rem(30);
+}
+
+
+img#hex-8hour-thanks-nolink {
+	margin-bottom:rem(20);
+}
+
+
+label#address-label {
+	margin-bottom:rem(0);
+	@include min-em(590) {
+	margin-bottom:rem(0);
+	}
+}
+
+
+img#bee-photos {
+	margin-top:rem(10);
+	margin-bottom:rem(10);
+	@include min-em(590) {
+	margin-top:rem(50);
+	margin-bottom:rem(10);
+	}
+}
+
+button#lip-shade-link {
+	margin-top:rem(25);
+	margin-bottom:rem(50);
+}
+
+div#giveaway-thanks {
+	display:none;
+}
+
+#section-read-the-lips {
+	padding:rem(40) 5%;
+	@include desktop {
+	padding:0;
+	}
+}
+
+#hexagon-youtube {
+	margin-bottom:rem(30);
+	@include desktop {
+	margin-bottom:rem(0);
+	}
+
+}
+
+#section-read-the-lips .content {
+	@include desktop {
+		padding:rem(60) 0;
+	}
+}
+
+div#section-selfie {
+	display:inline-block;
+}
+
+
+div#form-social img {
+	padding:0 rem(5) rem(20) 0;
+}
+
+div#form-social a:last-child {
+	display:none; 
+}
+
+
+
+
+
+/******************** / ********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** Lipstick range ********************/
+
+div#home-bar {
+	padding:rem(18) 5%;
+	@include desktop {
+	padding:rem(5) 0%;	
+	}
+
+}
+
+div#home-bar div#home-bar-left {
+	width:100%;
+	text-align:left;
+	margin-top: rem(8);
+	@include desktop {
+	width:25%;
+	float:left;
+	margin-top:rem(10);
+	}
+
+}
+
+div#home-bar div#home-bar-left img {
+	max-width:rem(160);
+	cursor: pointer;
+	padding-bottom:rem(5);
+}
+
+div#home-bar div#home-bar-middle {
+	width:100%;
+		margin-top: rem(8);
+	@include desktop {
+	width:50%;
+	float:left;
+	text-align:center;
+	}
+}
+
+div#home-bar div#home-bar-right {
+	width:100%;
+	@include desktop {
+	width:25%;
+	float:left;
+	}
+}
+
+div.shade-button {
+	padding:rem(20) 0;
+	cursor:pointer;
+	transition:0.5s;
+	img {
+	max-height:18px;
+	}
+}
+
+div.shade-button.shade-pinks {
+	background-color: $shade-pinks;
+	&:hover {
+	background-color: lighten($shade-pinks, 5%);
+	}
+}
+
+div.shade-button.shade-nudes {
+	background-color: $shade-nudes;
+	&:hover {
+	background-color: lighten($shade-nudes, 5%);
+	}
+}
+
+div.shade-button.shade-reds {
+	background-color: $shade-reds;
+	&:hover {
+	background-color: lighten($shade-reds, 5%);
+	}
+}
+
+div.shade-button.shade-plums {
+	background-color: $shade-plums;
+	&:hover {
+	background-color: lighten($shade-plums, 5%);
+	}
+}
+
+div#eighteen-shades {
+	display:inline-block;
+}
+
+
+div#shade-browser {
+	margin-top:rem(30);
+	margin-bottom:rem(30);
+	@include desktop {
+	margin-bottom:rem(40);
+	}
+
+}
+
+div.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	margin:0 auto;
+	opacity:0;
+}
+
+div.arrow-down.shade-category-current {
+	@include desktop {
+	opacity:1;
+	}
+}
+
+div.arrow-down.arrow-pinks {
+	border-top: 15px solid $shade-pinks;
+}
+
+div.arrow-down.arrow-nudes {
+	border-top: 15px solid $shade-nudes;
+}
+
+div.arrow-down.arrow-reds {
+	border-top: 15px solid $shade-reds;
+}
+
+div.arrow-down.arrow-plums {
+	border-top: 15px solid $shade-plums;
+}
+
+div#shade-browser-shades {
+	display:inline-block;
+	width: 100%;
+	padding-top:rem(0);
+	padding-bottom:rem(20);
+	@include desktop {
+	padding-top:rem(50);
+	padding-bottom:rem(50);
+	}
+}
+
+div#smile {
+	padding-bottom:rem(20);
+	@include desktop {
+	float:left;
+	width:33%;
+	padding: 0 1.5%;
+	display:inline-block;
+	}
+}
+
+div#smile a {
+	display:block;
+}
+
+div#smudges {
+	display:inline-block;
+	cursor: pointer;
+	width:90%;
+	@include min-em(675) {
+	width:50%;
+	}
+	@include desktop {
+	float:left;
+	width:63%;
+	display:inline-block;
+	}
+}
+
+div.smudge {
+	float:left;
+	margin-bottom:rem(10);
+	width:33%;
+	@include desktop {
+	margin:0 rem(8) rem(0) rem(8); 
+	width:rem(89);
+	}
+}
+
+div.smudge.active, div.smudge:hover  {
+	@include desktop {
+	border-bottom:3px solid $dark-brown;
+	}
+	
+}
+
+div.smudge.active a, div.smudge a:hover {
+	text-decoration:underline;
+	@include desktop {
+	text-decoration:none;
+	}
+}
+
+div#smudges-pinks, div#smudges-nudes, div#smudges-reds, div#smudges-plums {
+	display:inline-block;
+	margin:0 auto;
+	display:none;
+}
+
+div#smudges-pinks.show, div#smudges-nudes.show, div#smudges-reds.show, div#smudges-plums.show {
+	display:inline-block;
+	width:100%;
+	@include desktop {
+	width: auto
+	}
+}
+
+div#smile img, div#smile button {
+	display:none;
+}
+
+div#smile img.active {
+	display:inline-block;
+}
+
+div#smile button.active {
+	display:inline-block;
+	width:rem(330);
+}
+ 
+div#ingredients {
+	padding-top:rem(50);
+	padding-bottom:rem(100);
+	@include desktop {
+	padding-bottom:rem(140);
+	}
+}
+
+img#hundred-percent-banner {
+	max-width:422px;
+	width:100%;
+	@include desktop {
+	margin-bottom:rem(20);
+	}
+}
+
+img#text-ingredients {
+	max-width:196px;
+	margin-bottom:rem(20);
+	@include desktop {
+	margin-bottom:rem(40);
+	}
+}
+
+div.ingredient-hex {
+	text-align:center;
+	margin-bottom:rem(10);
+	@include min-em(600) {
+	text-align:left;
+	width:15%;
+	float:left;
+	margin-bottom:rem(30);
+	}
+	@include desktop {
+	width:36%;
+	display:inline-block;
+	}
+}
+
+div.ingredient-description {
+	float:left;
+	width: 100%; 
+	padding-left:0%;
+	margin-bottom:rem(20);
+	@include min-em(600) {
+	width: 80%; 
+	padding-left:5%;
+	}
+	@include desktop {
+	width:59%;
+	padding-left:0;
+	}
+}
+
+div.ingredient-description p {
+	padding-top:rem(10);
+	margin-top:rem(10);
+}
+
+div.raspberry-description {
+	@include desktop {
+	padding-left:5%;
+	}
+}
+
+div.moringa-description {
+	@include desktop {
+	padding-left:5%;
+	}
+}
+
+div#ingredients .content{
+	display:inline-block;
+}
+
+img#text-moringa {
+	max-width:240px;
+}
+
+img#text-raspberry {
+	max-width:240px;
+}
+
+div#ingredients-wrapper {
+	width:100%;
+	display:inline-block;
+}
+
+div.left-ingredient {
+	@include desktop {
+	padding-right:rem(50);
+	box-sizing: border-box;
+	}
+}
+
+div.right-ingredient {
+	@include desktop {
+	padding-left:rem(50);
+	box-sizing: border-box;
+	}
+}
+
+p#ingredients-intro {
+	margin-bottom:rem(30);
+	@include desktop {
+	margin-bottom:rem(30);
+	}	
+}
+
+div.info-box {
+	width:100%;
+	@include min-em(600) {
+	width:50%;
+	float:left;
+	}
+	@include desktop {
+	display: inline-block;
+	}
+}
+
+div.info-box p {
+	display:inline-block;
+	margin:0;
+	padding:rem(20) 0;
+	text-align:center;
+	width: 100%;
+}
+
+div.info-box:first-child p {
+	background-color:$grey;
+	color:#fff;
+}
+
+div.info-box:last-child p{
+	background-color:$darker-pink;
+	color:#fff;
+}
+
+#loading-spinner {
+	display:none;
+	margin-top:rem(25);
+	margin-bottom:rem(50);
+}
+
+button#range-buy-now {
+	margin-bottom:rem(30);
+}
+
+/******************** / ********************/
+
+
+
+/******************** In store experience page ********************/
+
+div#uk-map {
+	padding-top:rem(30);
+	padding-bottom:rem(30);
+	display: inline-block;
+	@include desktop {
+	padding-top:rem(50);
+	}
+}
+
+button#book-your-consultation {
+	width:auto;
+	padding:0 rem(20);
+	margin-bottom:rem(30);
+}
+
+img#you-are-invited {
+	margin-bottom:rem(15);
+}
+
+#map-pins {
+	position:relative;
+}
+
+div.map-pin {
+	position:absolute;
+	top:30%;
+	transition:transform 2s;
+	transition-delay: 0.5s;
+}
+
+div.pin-offset {
+	transform:translateY(rem(20));
+}
+
+div#glasgow-pin {
+	top:rem(105);
+	left:rem(-15);
+	@include min-em(530) {
+		top:rem(126);
+		left:rem(17);
+	}
+
+	img {
+		max-width:140px;
+		@include min-em(530) {
+		max-width:194px;
+		}
+	}
+}
+
+div#manchester-pin {
+	top:rem(240);
+	left:rem(50);
+	@include min-em(530) {
+		top:rem(304);
+		left:rem(75);
+	}
+
+	img {
+		max-width:156px;
+		@include min-em(530) {
+		max-width:221px;
+		}
+	}
+}
+
+div#birmingham-pin {
+	top:rem(295);
+	left:rem(205);
+	@include min-em(530) {
+		top:rem(360);
+		left:rem(310);
+	}
+
+	img {
+		max-width:141px;
+		@include min-em(530) {
+		max-width:192px;
+		}
+	}
+}
+
+#map-wrapper {
+	width:320px;
+	float: none;
+    display: inline-block;
+	@include min-em(530) {
+	width:490px;
+	}
+}
+
+#book-a-consultation-section {
+	padding-top:rem(30);
+	display: inline-block;
+	@include desktop {
+	padding-top:rem(50);
+	}
+}
+
+
+#book-a-consultation-header {
+	@include min-em(575) {
+	margin-bottom:rem(15);
+	}
+}
+
+#consultation-form-intro {
+	@include desktop {
+	margin-bottom:rem(30);	
+	}
+}
+
+#consultation-date, #consultation-time, .manchester-date, .glasgow-date, .birmingham-date {
+	display:none;
+}
+
+#consultation-form-wrapper form {
+	width:80%;
+	padding: 0 10%;
+    text-align: left;
+}
+
+#consultation-form-wrapper input[type='text'], #consultation-form-wrapper label {
+	width:100%;
+	display:inline-block;
+}
+
+#consultation-form-wrapper input[type='text'] {
+	margin-bottom:rem(15);
+	padding:rem(10) rem(10);
+	box-sizing:border-box;
+}
+
+#consultation-form-wrapper select {
+	width:100%;
+	margin-bottom:rem(15);
+	padding:rem(10) rem(10);
+	height: rem(45);
+
+}
+
+#consultation-radio-buttons {
+	margin-bottom:rem(20);
+}
+
+.radio-option {
+	margin-bottom:rem(5);
+}
+
+.radio-option input {
+	margin-right:rem(15); 
+}
+
+button#consultation-book-now  {
+  background-color:#fff;
+  border:none;
+  color:$flesh-pink;
+  width:100%;
+  height:rem(48);
+  text-transform: uppercase;
+  transition:0.4s;
+  margin-top:rem(10);
+  margin-bottom:rem(30);
+  @include desktop {
+  width:rem(202);
+  }
+  &:hover{
+  background-color:darken(#fff, 10%);
+  }
+}
+ 
+
+#consultation-thanks {
+	display:none;
+	width:80%;
+	padding: 0 10% rem(20) 10%;
+    text-align: left;
+}
+
+form#consultation-form input[type='checkbox'] {
+    width: auto;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-right: 6px;
+}
+
+form#consultation-form label[for='newsletter'] {
+    display: block;
+}
+
+#additional-fields {
+	min-height:rem(120);
+}
+
+#consultation-juicer {
+	margin-top:rem(40);
+	margin-bottom:rem(20);
+}
+
+#homepage-selfie-juicer {
+	margin:rem(30) 0 rem(30) 0;
+	@include desktop {
+	padding:0 0 0 rem(40);
+	margin:rem(90) 0 0 0;
+	box-sizing:border-box;
+	}
+
+}
+
+/******************** / ********************/
+
+
+
+
+/******************** Share your best pout ********************/
+
+#section-selfie-description .content {
+	vertical-align:bottom;
+	display: inline-block;
+}
+
+
+#text-share-pout {
+	width:100%;
+	max-width:rem(350);
+}
+
+
+div.selfie-gallery-half {
+  width:100%;
+  float:left;
+  @include min-em(1020) {
+  width:50%;
+  display: inline-block;
+  }
+}
+
+div#selfie-gallery-intro {
+	box-sizing: border-box;
+	padding:rem(40) rem(20) 0 rem(20);	
+	@include desktop {
+	padding:rem(80) rem(40) 0 rem(40);	
+	}
+}
+
+div#selfie-gallery-intro-images {
+	box-sizing: border-box;
+	margin-bottom:rem(40);
+	padding:rem(10) rem(10) rem(10) rem(10);	
+	@include desktop {
+	margin-bottom:rem(0);
+	}
+}
+
+div#selfie-social img {
+	padding:0 rem(6) rem(20) 0;
+}
+
+div#consultation-radio-buttons label {
+	display:inline; 
+}
+
+/****************************** / **************************/
+
+
+
+/******************** Read the lips ********************/
+
+div#play-and-win {
+	@include desktop {
+	max-height:rem(500);
+	}
+
+}
+
+div#play-and-win div.content {
+	display:inline-block;
+	@include desktop {
+		min-height:rem(500);
+	}
+}
+
+div#play-and-win img#header-image {
+	margin-top:rem(30);
+	@include desktop {
+	margin-top:rem(55);
+	}
+
+	margin-bottom:rem(30);
+}
+
+div#play-and-win p {
+	margin:0 auto rem(15) auto;
+}
+
+div#this-months-clues {
+	background-color:#fe92b7;
+}
+
+div.clue-heading-divider {
+	height:3px;
+	width:100px;
+	background-color:#fa6185;
+	margin:0 auto rem(25) auto;
+}
+
+#clues-heading {
+	margin-top:rem(30);
+}
+
+#clue-hexagons {
+	width:280px;
+	height:51px;
+	margin:0 auto;
+	background-image:url('../../img/read-the-lips/1-2-3-4-5.png');
+	background-position: 0px 0px;
+	margin-bottom:rem(30);
+}
+
+#answer-input {
+	margin-bottom:rem(20);
+}
+
+p#incorrect {
+	color:#fff;
+	margin-top:0;
+	margin-bottom:0;
+	display:none;
+}
+
+p#help-prompt {
+	margin-top:rem(5);
+	margin-bottom:rem(20);
+}
+
+button#next-clue {
+	margin-bottom:rem(20);
+}
+
+input#answer-input {
+	width:100%;
+	padding: rem(10) rem(30);
+	box-sizing:border-box;
+	text-align: center;
+	@include min-em(500){
+		width:rem(400);
+	}
+}
+
+div#this-months-clues p#question {
+	margin-top:0;
+	margin-bottom:rem(15);
+}
+
+#can-you-crack-the-code {
+	margin-bottom:rem(20);
+}
+
+
+
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 50%; /* 16:9 */
+	padding-top: 25px;
+	margin:0 auto rem(20) auto;
+	@include desktop {
+	max-width:rem(615);
+	padding-bottom: 30%;
+	}
+
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+div#form-read-the-lips {
+	max-width:rem(410);
+	margin: 0 auto;
+}
+
+div#form-read-the-lips label {
+	text-align:center;
+    display: inline-block;
+	margin-bottom:rem(8);
+}
+
+
+div#form-read-the-lips input {
+	background-color:#ededed;
+	box-sizing: border-box;
+	border:none;
+	padding:rem(10) rem(10);
+	text-align:center;
+	width:100%;
+	margin-bottom:rem(20);
+	@include min-em(590) {
+	margin-bottom:rem(16);
+	}
+}
+
+div#form-read-the-lips input[type='checkbox'] {
+    width: auto;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-right: 6px;
+}
+
+div#form-read-the-lips label[for='newsletter'] {
+    display: block;
+}
+
+
+div#form-read-the-lips span {
+	display:inline-block;
+	width:100%;
+	margin-bottom:rem(12);
+}
+
+
+
+img#form-read-the-lips {
+	margin-bottom:rem(20);
+	@include min-em(590) {
+	margin-bottom:rem(30);
+	}
+}
+
+
+div#form-read-the-lips button#giveaway-submit {
+	margin-top:rem(0);
+	margin-bottom:rem(5);
+	@include min-em(590) {
+	margin-top:rem(0);
+	margin-bottom:rem(15);
+	}
+}
+
+div#thanks-panel, div#win-panel {
+	max-width:rem(560);
+	margin:0 auto;
+	display:none;
+}
+
+div#thanks-panel {
+	@include desktop {
+
+	}
+}
+
+
+/****************************** / **************************/
+
+
+
+/******************** Send your friend a personalised gift card ********************/
+
+
+div#send-a-card {
+	padding: rem(20) 5% rem(40) 5%;
+    display: inline-block;
+	@include desktop {
+	padding: rem(40) 0 rem(60) 0;
+	}
+}
+
+img#personalised-title {
+	margin-bottom:rem(20);
+}
+
+p#step1-intro {
+	padding:rem(0);
+
+}
+
+img#spread-the-love {
+	max-width:rem(375);
+	width:100%;
+}
+
+div#divider {
+	width:rem(100);
+	height:rem(3);
+	margin: rem(25) auto rem(25) auto;
+	background-color:#fa6185;
+}
+
+img#step1-hexagon {
+	max-width:rem(280);
+}
+
+
+img#step2-hexagon {
+	max-width:rem(310);
+}
+
+div#slider-wrapper {
+	margin-bottom:rem(25);
+	display:inline-block;
+	width: 100%;
+} 
+
+
+#card-slider {
+	width:100%;
+	float:left;
+	margin-top:rem(10);
+}
+
+#prev-wrapper {
+	width:50%;
+	float:left;
+	text-align: center; 
+}
+
+#next-wrapper {
+	width:50%;
+	float:left;
+	text-align: center; 
+}
+
+
+.card-container { 
+  position: relative;
+  margin: 0 auto;
+  width: 285px;
+  height: 200px;
+  @include min-em(720) {
+  width: 620px;
+  height: 400px;
+  }
+}
+
+.card.flippable:hover {
+  transform: rotateY( 180deg );
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card .front, .card .back {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  @include backface-visibility(hidden);
+
+}
+
+.card .front {
+
+}
+
+.card .back {
+	transform: rotateY( 180deg );
+	text-align: left;
+}
+
+.card .back.back-1 {
+	background: url(../../img/cards/card-back-1.jpg) no-repeat;
+	background-size: contain;
+  	@include min-em(720) {
+	background-size: cover;
+	}
+}
+
+.card .back.back-2 {
+	background: url(../../img/cards/card-back-2.jpg) no-repeat;
+	background-size: contain;
+  	@include min-em(720) {
+	background-size: cover;
+	}
+}
+
+.card .back.back-3 {
+	background: url(../../img/cards/card-back-3.jpg) no-repeat;
+	background-size: contain;
+  	@include min-em(720) {
+	background-size: cover;
+	}
+}
+
+
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+
+
+
+.bx-viewport {
+    height: auto !important;
+}
+
+
+
+.bx-next, .bx-prev {
+	display:inline-block;
+	margin-top:rem(20);
+}
+
+.card-message {
+	resize: none;
+	width: 76%;
+	height:36%;
+	padding:2%;
+	margin-left:5%;
+	margin-top:5%;
+	&.ruby-ripple {
+	color:#86233b;
+	}
+	&.scarlet-soaked {
+	color:#e12d40;
+	}
+	&.iced-iris{
+	color:#d95882;
+	}
+	font-size:rem(12);
+	@include min-em(720) {
+	font-size:rem(22);
+	}
+}
+
+#customisation-options {
+	width:100%;
+	display: inline-block;
+
+}
+
+#customisation-options img {
+	cursor:pointer;
+}
+
+#customise-font, #customise-lips {
+	float:left;
+	padding:0 rem(30);
+	box-sizing:border-box;
+	width:100%;
+	margin-bottom:rem(30);
+	@include desktop {
+	width:50%;
+	margin-bottom:rem(40);
+	}
+}
+
+.colour-option, .print-option {
+	width:33.3%;
+	box-sizing:border-box;
+	padding: 0 1%;
+	float:left;
+}
+
+#customisation-options p {
+	margin-top:0;
+}
+
+.step-2, #customisation-options.step-2 {
+	display:none;
+}
+
+img#card-thanks {
+	width:rem(235);
+	margin-bottom:rem(10); 
+}
+
+.step-3, .step-4 {
+	display:none;
+}
+
+#share-form-container {
+	width:100%;
+}
+
+.step-4 p {
+	color:#fff;
+	font-size:rem(18);
+	margin-bottom:rem(35);
+}
+
+
+
+button#go-back, button#go-back-to-customise {
+  background-color:#000;
+  border:none;
+  color:#fff;
+  width:100%;
+  height:rem(48);
+  text-transform: uppercase;
+  transition:0.4s;
+  margin-top:rem(10);
+  margin-bottom:rem(30);
+  @include desktop {
+  width:rem(202);
+  }
+  &:hover{
+  background-color:lighten(#000, 10%);
+  }
+}
+
+#share-form {
+	width:100%;
+	max-width:rem(375);
+	margin:0 auto;
+}
+
+#share-form input, #share-form label, #share-form p, #share-form button {
+	width:100%;
+}
+
+#share-form button {
+	margin-bottom:rem(20);
+}
+
+#share-form p, #share-form label {
+	margin:rem(10) 0;
+	display:inline-block;
+}
+
+#share-form input {
+	margin-bottom:rem(10);
+	padding:rem(8);
+	box-sizing:border-box;
+	text-align:center;
+}
+
+button#facebook-timeline {
+	background-color:#3c5a98;
+	&:hover{
+	background-color:lighten(#3c5a98, 10%);
+	}
+}
+
+button#facebook-message {
+	background-color:#3c5a98;
+	&:hover{
+	background-color:lighten(#3c5a98, 10%);
+	}
+}
+
+button#tweet-link {
+	background-color:#34cbfe;
+	&:hover{
+	background-color:lighten(#34cbfe, 10%);
+	}
+}
+
+
+div#share-divider {
+	width:rem(100);
+	height:rem(3);
+	margin: rem(5) auto rem(5) auto;
+	background-color:#fa6185;
+}
+
+button#redeem-button {
+	margin-top:rem(10);
+	height:auto;
+	padding:0.3em 0;
+	@include min-em(700) {
+	margin-top:rem(30);
+	}
+}
+
+
+/******************************************* / **************************************/
+
+
+
+/******************** Lipstick matrix ********************/
+
+div#shadefinder-intro {
+		padding:rem(20) 0;
+	@include desktop {
+		padding:rem(50) 0;
+	}
+}
+
+div#shadefinder-intro img {
+	margin-bottom:rem(35); 
+}
+
+div.matrix-row {
+	width:100%;
+	display: inline-block;
+	margin-bottom:rem(20);
+	@include desktop {
+	margin-bottom:rem(20);
+	}
+}
+
+div.matrix-row div.question {
+	width:100%;
+	margin-bottom:rem(10);
+	@include desktop {
+	float:left;
+	width:25%;
+	margin-bottom:0;
+	}
+}
+
+div.matrix-row div.answers {
+	width:100%;
+	display:inline-block;
+	text-align:center;
+	@include desktop {
+	float:left;
+	width:75%;
+	}
+}
+
+div.matrix-row div.answer {
+	display:inline-block;
+	max-width:rem(120);
+	margin-right:rem(15);
+	margin-left:rem(15);
+	margin-bottom:rem(20); 
+	@include desktop {
+	float:left;	
+	margin-bottom:rem(0);
+	}
+	&:hover {
+		cursor:pointer;
+	}
+}
+
+.question img {
+	max-width:rem(200);
+	margin-bottom:rem(20);
+	@include desktop {
+		margin-top:rem(35);
+	}
+}
+
+#question-mood {
+	max-width:rem(200);
+	margin-bottom:rem(20);
+	@include desktop {
+		margin-top:rem(15);
+	}
+}
+
+div#matrix-section {
+	padding:rem(60) 5%;
+	@include desktop {
+	padding:rem(60) 0%;
+	}
+}
+
+.answer.inactive .highlighted {
+	display:none;
+}
+
+.answer.active .highlighted {
+	display:inline-block;
+}
+
+.answer.active .not-highlighted {
+	display:none;
+}
+
+.answer.inactive .not-highlighted {
+	display:inline-block;
+}
+
+.answer.active .highlighted {
+	display:inline-block;
+}
+
+#see-results {
+	margin-top:rem(0);
+	@include desktop {
+	margin-top:rem(30);
+	}
+}
+
+#lipstick-selection {
+	background-color:#fff;
+	display:inline-block;
+	padding:rem(30) 0 rem(20) 0;
+	@include min-em(700) {
+		padding:rem(30) 0 rem(50) 0;
+	}
+}
+
+#retake-quiz {
+	margin-top:rem(40);
+}
+
+span#results-title {
+	margin-bottom:rem(50);
+	display: inline-block;
+	width:100%;
+}
+
+.lipstick-result {
+	float:left;
+	display:inline-block;
+	text-align:center;
+	margin-bottom:rem(40);
+	box-sizing:border-box;
+	padding:0 rem(20);
+	width:50%;
+	height:rem(310);
+	@include min-em(500) {
+	width:33%;
+	}
+	@include min-em(800) {
+	width:25%;
+	}
+}
+
+.lipstick-result img {
+	width:rem(150);
+	margin-bottom:rem(20);
+}
+
+.lipstick-result span {
+	width:100%;
+	display:inline-block;
+}
+
+.lipstick-result #buy-now {
+	max-width:rem(115);
+	margin-top:rem(10);
+}
+
+#answers-section {
+	display:none;
+}
+
+
+/***************************** / **************************/
+

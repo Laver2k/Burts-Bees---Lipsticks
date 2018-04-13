@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "S&G Admin Area"
+AuthUserFile /var/www/vhosts/vps01.digitalwithready.com/lipstick.burtsbees.co.uk/admin/.htpasswd 
+Require valid-user

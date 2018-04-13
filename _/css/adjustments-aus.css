@@ -1,0 +1,21 @@
+div[data-shade='doused-rose'], div[data-shade='crimson-coast'], div[data-shade='wine-wave'], div[data-shade='orchid-ocean'] {
+	display:none;
+}
+
+
+
+
+div.card .back.back-1 {
+	background: url(../../img/cards/aus/card-back-1.jpg) no-repeat;
+	background-size: cover;
+}
+
+div.card .back.back-2 {
+	background: url(../../img/cards/aus/card-back-2.jpg) no-repeat;
+	background-size: cover;
+}
+
+div.card .back.back-3 {
+	background: url(../../img/cards/aus/card-back-3.jpg) no-repeat;
+	background-size: cover;
+}

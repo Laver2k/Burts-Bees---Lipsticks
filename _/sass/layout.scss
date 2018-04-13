@@ -1,0 +1,466 @@
+body {
+  padding-top:rem(45);
+  @include desktop { 
+  padding-top:0;
+  }
+}
+
+ 
+header {
+  justify-content: center;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  height:rem(45);
+  overflow:hidden;
+  z-index: 1;
+  @include desktop {
+  position: inherit;
+  height:auto;
+  overflow:inherit;
+  }
+  div#header-left {
+    text-align:left;
+    width:33.3%;
+    float:left;
+    margin-top:rem(8);
+      img {
+        @include desktop {
+        opacity:0;
+        }
+      }
+  }
+  div#header-middle {
+    text-align:center;
+    width:33.3%;
+    float:left;
+  }
+  div#header-right {
+    text-align:right;
+    width:33.3%;
+    float:left;
+    margin-top:rem(7);
+      img {
+        @include desktop {
+        margin-top:rem(21);
+        }
+      }
+  }
+}
+
+
+img#logo {
+  padding-top:rem(5);
+  padding-bottom:rem(15);
+  max-width:rem(90);
+  @include desktop {
+  padding-top:rem(10);
+  padding-bottom:rem(8);
+  max-width:100%;
+  }
+} 
+
+
+img#menu-button {
+  cursor:pointer;
+  margin-top:rem(1);
+  max-width:33px;
+}
+
+
+#main-nav {
+  background-image:url('../../img/layout/nav-bg-striped.jpg'); 
+  background-repeat: repeat-both;
+  display:none;
+  @include desktop {
+  display: inline-block;
+  }
+  ul {
+    padding:rem(7) 0 rem(3) 0;
+    display: inline-block;
+    margin:0 auto;
+  }
+  li {
+    float:left;
+  }
+}
+
+
+#mobile-nav {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $yellow; 
+  overflow-x: hidden; 
+  padding-top: rem(40); 
+  transition: 0.5s;
+  ul {
+    display: inline-block;
+    margin:0 auto;
+    padding: 0 5%;
+    min-width:rem(200);
+  }
+  li {
+    width:100%;
+    display: inline-block;
+    padding:rem(10) 0;
+    border-bottom:1px solid $dark-brown;
+    &:last-child{
+    border-bottom:0px solid $dark-brown;
+    }
+  }
+}
+
+
+#mobile-nav #close-button {
+  position: absolute;
+  top: 0;
+  right: rem(25);
+  margin-left: rem(50);
+  &:hover {
+  text-decoration: underline;
+  }
+}
+
+footer {
+  margin-top:rem(30);
+  margin-bottom:rem(30);
+  display: inline-block;
+  @include phablet {
+  margin-top:rem(50);
+  margin-bottom:rem(100);
+  }
+}
+
+div#social-links img {
+  padding:0 rem(5) rem(20) rem(5);
+  width:40px;
+  @include desktop {
+  padding:0 rem(8) rem(30) rem(8);
+  width:auto;
+  }
+}
+
+footer ul  {
+    display: inline-block;
+    margin:0 auto;
+    padding:0;
+}
+
+footer li {
+  @include min-em(600) {
+  float:left;
+  }
+}
+
+footer li a {
+  display:inline-block;
+  padding:rem(5) rem(18) rem(5) rem(18);
+  @include min-em(600) {
+  width:auto;
+  border-right: 1px solid $dark-brown;
+  padding:0 rem(18) 0 rem(18);
+  }
+
+}
+
+
+/*************** utility *************/
+.section { 
+  width:90%;
+  padding: 0 5%;
+  text-align: center;
+  @include desktop {
+  width:100%;
+  padding:0;
+  }
+  &.background-yellow {
+    background-color:$yellow;
+  }
+  &.background-white {
+    background-color:#fff;
+  }
+  &.background-pink {
+    background-color:$light-pink;
+  }
+  &.background-brown {
+    background-color:$brown;
+  }
+}
+
+
+.content {
+
+  @include desktop {
+  width:$desktop-width;
+  margin:0 auto;
+  display: inline-block;
+  }
+}
+
+
+.coverage-block {
+  width:100%;
+  @include min-em(530) {
+  width:50%;
+  float:left;
+  display: inline-block;
+  }
+}
+
+
+.twenty-five {
+  width:50%;
+  float:left;
+  @include desktop {
+  width:25%;
+  display: inline-block;
+  }
+}
+
+
+
+.half{
+  width:100%;
+  float:left;
+  @include desktop {
+  width:50%;
+  display: inline-block;
+  }
+}
+
+.sixty {
+  width:100%;
+  @include desktop {
+  width:60%;
+  float:left;
+  display: inline-block;
+  }
+}
+
+
+.forty {
+  width:100%;
+  @include desktop {
+  width:40%;
+  float:left;
+  display: inline-block;
+  }
+}
+
+
+.background-clouds {
+  background-image:url('../../img/home/clouds-blur.png');
+  background-repeat:no-repeat;
+  background-position: right top;
+  background-size: cover;
+  @include desktop {
+  background-size: 130%;
+  }
+}
+
+.background-wood {
+  background-image:url('../../img/cards/wood.jpg');
+ 
+}
+
+
+.background-short-clouds {
+  background-image:url('../../img/lipstick-range/short-cloud-background.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+} 
+
+
+.background-read-lips-woman {
+  @include desktop {
+    background-image:url('../../img/read-the-lips/woman-background.jpg');
+  }
+
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+
+.background-white-then-grey {
+  background-color:#ffffff;
+  @include desktop {
+  background-color:#f4f5f8;
+  }
+}
+
+.background-red {
+  background-color:$light-red;
+}
+
+.background-flesh-pink {
+  background-color:$flesh-pink;
+}
+
+
+
+.background-grey {
+  background-color:#f4f5f8;
+}
+
+.background-lipstick-line {
+  background-image:url('../../img/lipstick-range/lipstick-row.png');
+  background-repeat:no-repeat;
+  background-position: center bottom ;
+}
+
+.background-flowers {
+  background-repeat:no-repeat;
+  background-image:url('../../img/home/flowers-bg.png');
+  background-size: 100% auto;
+  background-position: -10% 80%;
+  @include min-em(610) {
+  background-position: 0% 90%;
+  }
+  @include min-em(830) {
+  background-position: 0% 95%;
+  }
+  @include min-em(860) {
+  background-position: 0% 140%;
+  }
+  @include desktop {
+  background-size: auto;
+  background-position: 90% 210%;
+  }
+}
+
+.background-flowers-large {
+  background-repeat:no-repeat;
+  background-image:url('../../img/read-the-lips/large-flower-bg.jpg');
+  background-size: 100% auto;
+  display: inline-block;
+}
+
+.background-lipstick {
+  background-image:url('../../img/home/lip-shade-finder-background.jpg');
+  background-repeat:no-repeat;
+  background-position: center top;
+  background-size: 130%;
+  background-size: cover;
+  @include min-em(565) {
+  background-size: contain;
+  }
+}
+
+
+.background-hands {
+  @include desktop {
+  background-image:url('../../img/instore/arms.png');
+  background-repeat:no-repeat;
+  background-position:right bottom;
+  }
+}
+
+.background-facewall {
+  background-size: 200%;
+  background-image:url('../../img/home/facewall.gif'); 
+  background-position: center top;
+  @include phablet {
+  background-size: auto;
+  }
+}
+
+.background-white {
+  background-color:#fff;
+}
+
+.background-pink {
+  background-color:#f88294;
+}
+
+.background-light-pink {
+  background-color:$another-pink;
+} 
+
+.background-boards {
+  background-image:url('../../img/home/boards.jpg');
+  background-repeat:repeat-x
+}
+
+
+.background-texture {
+  background-image:url('../../img/home/texture.jpg');
+  background-size: cover;
+  @include desktop {
+  background-size: auto;
+  background-position: center top;
+  }
+
+}
+
+
+
+.background-lips {
+
+  @include desktop {
+  background-image:url('../../img/home/lip-prints.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left top;
+  }
+
+}
+
+
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+
+button {
+  background-color:$dark-pink;
+  border:none;
+  color:#fff;
+  width:rem(202);
+  height:rem(48);
+  text-transform: uppercase;
+  transition:0.4s;
+  &:hover{
+  background-color:darken($dark-pink, 5%);
+  }
+}
+
+
+.no-whitespace {
+  font-size:0;
+}
+
+
+.flex {
+   @include display(flex);
+}
+
+
+.center-align {
+  @include justify-content(center);
+}
+
+#aus .hideFromAus {
+ display:none;
+}
+
+.hide {
+  display:none;
+}
+
+.show {
+  display:inline-block;
+}
+
+.invisible {
+  opacity:0;
+}
+
+.visible {
+  opacity:100;
+}

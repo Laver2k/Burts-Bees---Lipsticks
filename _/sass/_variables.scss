@@ -1,0 +1,51 @@
+/* Colours and breakpoints */
+$phablet-width: 450px;
+$tablet-width: 768px;
+$desktop-width: 1020px;
+$brand-brown:#473729;
+$dark-brown: #493728;
+$light-pink: #fc92b6;
+$dark-pink: #f86386;
+$darker-pink: #d4497f;
+$flesh-pink: #e8646b;
+$another-pink: #ffa6af;
+$red: #a00618;
+$yellow: #fcbe45;
+$brown: #5e3826;
+$light-red:#e94054;
+$grey:#675357;
+
+$shade-pinks: #f06b89;
+$shade-nudes: #d28a77;
+$shade-reds: #dc3746;
+$shade-plums: #b0065e;
+
+$body-font: 'Montserrat', sans-serif;
+$special-font: 'Homemade Apple', cursive;
+
+/* Responsive Set Up */
+
+
+@mixin phablet {
+  @media (min-width: #{$phablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin min-em($width) {
+	@media screen and (min-width: $width + px ) {
+		@content;	
+	}
+}

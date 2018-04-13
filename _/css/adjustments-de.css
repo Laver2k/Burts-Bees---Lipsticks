@@ -1,0 +1,22 @@
+div.shade-button.shade-plums img {
+	max-height:21px;
+}
+
+
+#social-links a:nth-child(3), #social-links a:nth-child(4) {
+	display:none;
+}
+
+div#form-social a:nth-child(2) {
+	display:none;
+}
+
+div#form-social a:last-child {
+	display:inline-block !important; 
+}
+
+.lipstick-result button#buy-now {
+	padding:7px 0;
+	height:auto;
+}
+

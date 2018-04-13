@@ -1,0 +1,285 @@
+/* Fonts */
+body, div, p, span, form, input {
+  font-family: $body-font;
+  color:#000;
+  font-weight:300;
+  font-size:rem(16);
+}
+
+#main-nav li {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color:#fff;
+    padding:0 rem(20) 0 rem(20);
+    text-transform: uppercase;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:first-child a {
+    padding:0 rem(20) 0 rem(0);
+  }
+  &:last-child a {
+    padding:0 rem(0) 0 rem(20);
+  }
+}
+
+
+#mobile-nav li {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color:#fff;
+    font-size:1.2em;
+    text-transform: uppercase;
+  }
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color:#fff;
+  }
+}
+
+
+#mobile-nav #close-button {
+  text-decoration: none;
+  font-size: rem(35);
+  color:$dark-brown;
+}
+
+
+footer li {
+   list-style: none; 
+  a {
+    text-decoration: none;
+    color:$dark-brown;
+    font-size:rem(16); 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+footer li:last-child a {
+  border-right: 0px;
+}
+
+
+#lipstick-countdown {
+  font-size:rem(60); 
+  color:#fff;
+  @include desktop {
+    font-size:rem(80); 
+  }
+}
+
+p#moisture-summary {
+  color:#fff;
+  font-size:rem(17);
+  line-height:rem(25);
+}
+
+p#win-lipsticks-summary {
+  font-size:rem(18);
+}
+
+
+#left-8hour p {
+  font-size:rem(14);
+  margin-bottom:rem(17);
+}
+ 
+#right-8hour label {
+  font-size:rem(16);
+  margin-bottom:rem(5);
+}
+
+#right-8hour span {
+  font-size:rem(13);
+  margin-bottom:rem(5);
+}
+
+#form-errors p {
+  color:$red;
+  font-size:rem(15);
+  font-weight:bold;
+}
+
+.shade-button span {
+  color: #fff;
+  font-style:italic;
+  font-family:$body-font;
+}
+
+.smudge a {
+  color:$dark-brown;
+  text-decoration: none;
+  padding-top:rem(10);
+  display:inline-block;
+  font-size:rem(18);
+  line-height:rem(20);
+  @include desktop {
+  padding-bottom:rem(10);
+  }
+}
+
+#ingredients p {
+  color:#fff;
+  font-size:rem(18);
+  line-height:rem(26);
+
+}
+
+.ingredient-description p {
+  border-top:2px solid #fff;
+}
+
+#section-read-the-lips p {
+  margin-bottom:rem(35);
+  font-size:rem(18);
+}
+
+
+#section-win p {
+  color:$brand-brown;
+}
+
+#terms-link {
+  color:$brand-brown;
+  font-size:rem(12);
+  a {
+  color:$brand-brown;
+  }
+}
+
+#uk-map p {
+  font-size:rem(18);
+  margin-bottom:rem(25);
+}
+
+#book-a-consultation-section p, #book-a-consultation-section label, #book-a-consultation-section span {
+  color:#fff;
+  font-size:rem(18);
+} 
+
+#book-a-consultation-section input {
+  font-size:rem(18);
+}
+
+#book-a-consultation-section input[type='text'], #book-a-consultation-section select  {
+  color:dimgrey;
+}
+
+#book-a-consultation-section label#consultation-newsletter-label {
+  font-size:rem(14);
+}
+
+#selfie-gallery-intro p {
+  color:#fff;
+  font-size:rem(18);
+}
+
+
+div#play-and-win p {
+  font-size:rem(18);
+  line-height:1.4;
+  @include desktop {
+    max-width:rem(450);
+  }
+}
+
+p#clues-heading {
+  font-size:rem(24);
+  margin-bottom:rem(15);
+}
+
+p#incorrect {
+  font-size:rem(15);
+}
+
+p#help-prompt {
+  font-size:rem(15);
+}
+
+div#this-months-clues p#question {
+  font-size:rem(18);
+}
+
+
+p#step1-intro {
+  color:#fff;
+  font-size:rem(18);
+  line-height:rem(25);
+  max-width:rem(545);
+  margin:0 auto rem(12) auto;
+  display:block;
+
+}
+
+div#shadefinder-intro p {
+    font-size:rem(18);
+}
+
+div#shadefinder-intro p:last-child {
+  font-weight:bold;
+}
+
+div#shadefinder-intro p#consult-the-origin {
+    font-size:rem(25);
+    margin-top:0;
+}
+
+p#answers-summary {
+  margin-top:rem(30);
+  margin-bottom:rem(35);
+}
+
+.lipstick-result span {
+  font-style: italic;
+    font-size:rem(18);
+}
+
+.lipstick-result span.cosmetic-type {
+  text-transform: uppercase;
+  font-size:rem(18);
+  font-style: normal;
+}
+
+#lipstick-selection span#results-title {
+  text-transform: uppercase;
+  font-size:rem(25);
+  font-style: normal;
+}
+
+.card-message {
+font-family:$special-font;
+}
+
+div#customisation-options p {
+  color:#fff;
+}
+
+label.recipient-label {
+  color:#fff;
+  font-size:rem(18);
+}
+
+label.sender-label {
+  color: #febf35;
+  font-size:rem(18);
+}
+
+#share-form p {
+  color:#fa6185;
+  font-size:rem(20);
+}
+
+#uk-map p#scroll-down {
+color:$dark-pink;
+margin-bottom:rem(0);
+}
+
+#uk-map p#event-tac {
+  font-size:rem(14);
+}
